@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript a DOM</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p 
+    id="js-paragraph" 
+    onmouseover="ztucni(event)"
+    onmouseout="neztucni(event)">V elipse spí lev</p>
+    <button onclick="zcervenej()">Červený po kliknutí</button>
+    <button onclick="zvetsi()">Větší po kliknutí</button>
+
+    <br>
+    <br>
+
+    <audio preload="auto" id="zvuk" src="audio/dingdingdang.mp3"></audio>
+    <button onclick="prehraj('#zvuk')">Přehraj</button>
+    <button onclick="pauzni('#zvuk')">Pauzni</button>
+    <button onclick="sound_0('#zvuk')">Ztiš zvuk</button>
+    <button onclick="sound_05('#zvuk')">Pusť to napůl</button>
+    <button onclick="sound_1('#zvuk')">Pusť na plný pecky</button>
+    <button onclick="zacatek('#zvuk')">Vrať se na začátek</button>
+
+
+    <script src="main.js"></script>
+</html>
